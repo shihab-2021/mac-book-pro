@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Mac Book Pro</title>
+    <style>
+        .line{
+            border-bottom: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="row g-5 mt-3">
+                <!-- image section  -->
+                <div class="col-lg-6 text-center">
+                    <img class="img-fluid" src="./images/mac.png" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <h1>Customize your Blue 24-inch iMac with Apple M1 chip</h1>
+                    <p class="mb-5">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-cores GPU, and16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard-US English</p>
+                    <!-- section for buttons -->
+                    <section>
+                        <!-- Memory Section Start -->
+                        <div class="mb-5">
+                            <h6>Memory</h6>
+                            <div>
+                                <button id="M8GB" class="btn btn-outline-dark me-2">8GB unified memory</button>
+                                <button id="M16GB" class="btn btn-outline-dark me-2">16GB unified memory</button>
+                            </div>
+                        </div>
+                        <!-- Memory Section End -->
+                        <!-- Storage Section Start -->
+                        <div class="mb-5">
+                            <h6>Storage</h6>
+                            <div>
+                                <button id="SSD256GB" class="btn  btn-outline-dark me-2">256GB SSD storage</button>
+                                <button id="SSD512GB" class="btn btn-outline-dark me-2">512GB SSD storage</button>
+                                <button id="SSD1TB" class="btn btn-outline-dark me-2">1TB SSD storage</button>
+                            </div>
+                        </div>
+                        <!-- Storage Section End -->
+                        <!-- Delivery Section Start -->
+                        <div class="mb-5">
+                            <h6>Choose your delivery option</h6>
+                            <div>
+                                <button id="Aug25" class="btn btn-outline-dark me-2">Friday,Ang 25 FREE Prime Delivery</button>
+                                <button id="Aug21" class="btn btn-outline-dark me-2">Friday,Ang 21 Delivery Charge $20</button>
+                            </div>
+                        </div>
+                        <!-- Delivery Section Start -->
+                    </section>
+                    <!-- section for payment  -->
+                    <section>
+                        <!-- Amount Memo  -->
+                        <div class="w-75 mb-5">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between">
+                                    <h6>Best Price</h6>
+                                    <h6>$<span id="bestPrice">1299</span></h6>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between">
+                                    <h6>Extra Memory Cost</h6>
+                                    <h6>$<span id="memoryCost">0</span></h6>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between">
+                                    <h6>Extra Strong Cost</h6>
+                                    <h6>$<span id="storageCost">0</span></h6>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between line">
+                                    <h6>Delivery Charge</h6>
+                                    <h6>$<span id="deliveryCost">0</span></h6>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between">
+                                    <h6>Total Price</h6>
+                                    <h6>$<span id="totalCost">1299</span></h6>
+                                </li>
+                                <p></p>
+                              </ul>
+                        </div>
+                        <!-- promo code  -->
+                        <div class="w-75 mb-3">
+                            <h6>Add Promo Code</h6>
+                            <div class="input-group mb-3">
+                                <input id="promoCode" type="text" class="form-control" placeholder="Promo Code" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <button class="btn btn-danger" type="button" id="apply">Apply</button>
+                              </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container">
+        <hr class="w-85">
+        <h1 class="text-center mb-3">Total: $<span id="totalUpdate">1299</span></h1>
+    </footer>
+    <!-- Bootstrap JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- JS Link  -->
+    <script src="app.js"></script>
+</body>
+</html>
